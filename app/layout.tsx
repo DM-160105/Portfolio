@@ -90,7 +90,11 @@ export const viewport = {
     { media: "(prefers-color-scheme: light)", color: "#ffffff" },
     { media: "(prefers-color-scheme: dark)", color: "#000000" },
   ],
+    icons: {
+    icon: "app/favicon.ico",
+  },
 };
+
 
 
 const LazyMotionProvider = dynamic(() =>
