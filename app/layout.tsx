@@ -92,7 +92,6 @@ export const viewport = {
   ],
 };
 
-const OrientationGuard = dynamic(() => import("@/components/OrientationGuard"));
 
 const LazyMotionProvider = dynamic(() =>
   import("@/components/LazyMotionProvider").then(
@@ -115,7 +114,6 @@ export default function RootLayout({
         className={`${inter.variable} ${outfit.variable} antialiased`}
         suppressHydrationWarning
       >
-        <OrientationGuard />
         <SmoothScroll>
           <LazyMotionProvider>
             <ThemeProvider
